@@ -19,7 +19,7 @@ export class Section {
 
   @Column({ type: "integer" })
   boardId!: number;
-
+  // We don't "do the joins beforehand." We define the relationship once, so TypeORM knows how to perform the join when you need it.
   @ManyToOne(() => Board, (board) => board.sections, {
     onDelete: "CASCADE",
   })

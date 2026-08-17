@@ -10,6 +10,47 @@ Run the following command:
 npx create-turbo@latest
 ```
 
+## ENDPOINTS
+
+```
+AUTH
+  POST   /signup
+  POST   /signin
+
+ORGANIZATION
+  POST   /organization
+  DELETE /organization
+
+BOARD
+  GET    /boards
+  POST   /board
+  PUT    /board
+  DELETE /board
+
+MEMBERSHIP
+  POST   /invite
+  POST   /accept
+  DELETE /membership
+
+SECTION
+  POST   /section
+  GET    /sections
+  DELETE /section
+
+ISSUE
+  POST   /issue
+  GET    /issues
+  GET    /issue/:issueId
+  PUT    /issue
+  DELETE /issue/:issueId
+  PUT    /issue/move
+
+COMMENT
+  POST   /comment
+  DELETE /comment
+  PUT    /comment
+```
+
 ## What's inside?
 
 This Turborepo includes the following packages/apps:
